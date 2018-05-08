@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("MainActivity", "File extension: " + extension);
             }
             try {
-                if (!extension.equals("mid"))
+                if (!extension.equals("midi"))
                     throw new Exception("Not a MIDI file!");
                 openMidiFileAsync(data.getData());
             } catch (Exception e) {
